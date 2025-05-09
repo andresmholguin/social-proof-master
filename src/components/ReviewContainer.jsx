@@ -31,10 +31,16 @@ const reviews = [
   },
 ];
 
+const positionClass = [
+  "xl:place-self-start",
+  "xl:place-self-center",
+  "xl:place-self-end",
+];
+
 const ReviewContainer = () => {
   return (
-    <div className=" text-Light-Grayish-Magenta">
-      {reviews.map(({ id, name, imgUrl, buyerType, review }) => {
+    <div className=" text-Light-Grayish-Magenta xl:flex xl:flex-row xl:justify-center xl:gap-8 xl:h-[246px]">
+      {reviews.map(({ id, name, imgUrl, buyerType, review }, index) => {
         return (
           <ReviewCard
             key={id}
@@ -42,6 +48,7 @@ const ReviewContainer = () => {
             imgUrl={imgUrl}
             Type={buyerType}
             review={review}
+            positionClass={positionClass[index]}
           />
         );
       })}
