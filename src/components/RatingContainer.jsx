@@ -8,7 +8,7 @@ const ratings = [
 
 const RatingContainer = () => {
   return (
-    <section className="mb-12">
+    <section className="mb-12 lg:w-[960px]">
       {ratings.map((rating) => {
         return <RatingCard key={rating} text={rating} />;
       })}
