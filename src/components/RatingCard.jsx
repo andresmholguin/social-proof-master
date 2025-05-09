@@ -2,15 +2,15 @@ import IconStart from "../assets/images/icon-star.svg";
 
 const RatingCard = ({ text }) => {
   return (
-    <div>
-      <div>
-        <img src={IconStart} alt="Icon Start" />
-        <img src={IconStart} alt="Icon Start" />
-        <img src={IconStart} alt="Icon Start" />
-        <img src={IconStart} alt="Icon Start" />
-        <img src={IconStart} alt="Icon Start" />
+    <div className="bg-Light-Grayish-Magenta flex flex-col items-center  mb-4 rounded-lg py-4">
+      <div className="flex items-center justify-center gap-3 mb-2">
+        <img className="" src={IconStart} alt="Icon Start" />
+        <img className="" src={IconStart} alt="Icon Start" />
+        <img className="" src={IconStart} alt="Icon Start" />
+        <img className="" src={IconStart} alt="Icon Start" />
+        <img className="" src={IconStart} alt="Icon Start" />
       </div>
-      <p>{text}</p>
+      <p className="text-center font-bold text-Very-Dark-Magenta">{text}</p>
     </div>
   );
 };

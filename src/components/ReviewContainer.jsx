@@ -33,7 +33,7 @@ const reviews = [
 
 const ReviewContainer = () => {
   return (
-    <div>
+    <div className=" text-Light-Grayish-Magenta">
       {reviews.map(({ id, name, imgUrl, buyerType, review }) => {
         return (
           <ReviewCard
